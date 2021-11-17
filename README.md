@@ -1,6 +1,13 @@
 # Gym Management System
 Java Application to manage the Gym.
 
+## Project Contains
+1. UML diagrams:
+   - Use Case Diagram
+   - Class Diagram
+   - CRC Diagram
+2. Source Code
+
 ## Contributors
 - [Saloni Doshi](https://github.com/saloni33)
 - [Anjali Sahu](https://github.com/99anjali)
