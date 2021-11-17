@@ -83,3 +83,5 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+/Gym-Management/gym-management/nbproject/private/
+/Gym-Management/gym-management/dist/
