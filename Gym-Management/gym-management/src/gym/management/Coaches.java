@@ -39,12 +39,14 @@ public class Coaches extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        Logout = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -71,13 +73,13 @@ public class Coaches extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(153, 153, 255));
 
-        jLabel3.setBackground(new java.awt.Color(102, 102, 255));
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Logout");
-        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+        Logout.setBackground(new java.awt.Color(102, 102, 255));
+        Logout.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        Logout.setForeground(new java.awt.Color(255, 255, 255));
+        Logout.setText("Logout");
+        Logout.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel3MouseClicked(evt);
+                LogoutMouseClicked(evt);
             }
         });
 
@@ -101,6 +103,26 @@ public class Coaches extends javax.swing.JFrame {
             }
         });
 
+        jLabel6.setBackground(new java.awt.Color(102, 102, 255));
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Equipment");
+        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel6MouseClicked(evt);
+            }
+        });
+
+        jLabel7.setBackground(new java.awt.Color(102, 102, 255));
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setText("Exercise");
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -116,29 +138,36 @@ public class Coaches extends javax.swing.JFrame {
                             .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(65, 65, 65)
+                        .addGap(62, 62, 62)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(1, 1, 1)
-                                .addComponent(jLabel4))
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel3))))
-                .addContainerGap(78, Short.MAX_VALUE))
+                            .addComponent(Logout)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addComponent(jLabel5)
+                                    .addGap(17, 17, 17))
+                                .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel6)))))
+                .addContainerGap(91, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap(140, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(61, 61, 61)
                 .addComponent(jLabel4)
-                .addGap(56, 56, 56)
-                .addComponent(jLabel5)
-                .addGap(64, 64, 64)
-                .addComponent(jLabel3)
+                .addGap(52, 52, 52)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel7)
+                .addGap(47, 47, 47)
+                .addComponent(jLabel5)
+                .addGap(46, 46, 46)
+                .addComponent(Logout)
+                .addGap(66, 66, 66)
                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(101, 101, 101))
         );
@@ -438,11 +467,12 @@ public class Coaches extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jLabel5MouseClicked
     
-    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+    private void LogoutMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogoutMouseClicked
         // TODO add your handling code here:
         new Login().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jLabel3MouseClicked
+        JOptionPane.showMessageDialog(null , "Logged Out Successfully");
+    }//GEN-LAST:event_LogoutMouseClicked
 
     Connection Con = null;
     PreparedStatement pst = null;
@@ -550,6 +580,18 @@ public class Coaches extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_EditBtnMouseClicked
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+        // TODO add your handling code here:
+        new Equipment().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel6MouseClicked
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        // TODO add your handling code here:
+        new Exercise().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel7MouseClicked
     
     /**
      * @param args the command line arguments
@@ -596,6 +638,7 @@ public class Coaches extends javax.swing.JFrame {
     private javax.swing.JTable CoachTable;
     private javax.swing.JButton DeleteBtn;
     private javax.swing.JButton EditBtn;
+    private javax.swing.JLabel Logout;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -604,9 +647,10 @@ public class Coaches extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
