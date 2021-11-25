@@ -6,9 +6,9 @@ Gym Management system is a java based Android application which basically helps 
 - MySQL
 
 ## UML Diagrams
--[Use Case Diagram](https://github.com/saloni33/Gym_management_system/blob/main/images/use_case%20diagram.png)
--[Class Diagram](https://github.com/saloni33/Gym_management_system/blob/main/images/class%20diagram.png)
--[CRC Diagram](https://github.com/saloni33/Gym_management_system/blob/main/images/CRC_diagram.png)
+- [Use Case Diagram](https://github.com/saloni33/Gym_management_system/blob/main/images/use_case%20diagram.png)
+- [Class Diagram](https://github.com/saloni33/Gym_management_system/blob/main/images/class%20diagram.png)
+- [CRC Diagram](https://github.com/saloni33/Gym_management_system/blob/main/images/CRC_diagram.png)
 
 
 ## Contributors
