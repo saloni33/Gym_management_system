@@ -5,12 +5,11 @@ Gym Management system is a java based Android application which basically helps 
 - Java
 - MySQL
 
-## Project Contains
-1. UML diagrams:
-   - Use Case Diagram
-   - Class Diagram
-   - CRC Diagram
-2. Source Code
+## UML Diagrams
+1. Use Case Diagram
+2. Class Diagram
+3. CRC Diagram
+
 
 ## Contributors
 - [Saloni Doshi](https://github.com/saloni33)
