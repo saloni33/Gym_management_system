@@ -1,5 +1,5 @@
 # Gym Management System
-Java Application to manage the Gym.
+Gym Management system is a java based Android application which basically helps the Gym manager to manage the gym including list of members, trainers, equipments, exercise plans, etc.
 
 ## Technology Used
 - Java
