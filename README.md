@@ -1,6 +1,10 @@
 # Gym Management System
 Java Application to manage the Gym.
 
+## Technology Used
+- Java
+- MySQL
+
 ## Project Contains
 1. UML diagrams:
    - Use Case Diagram
