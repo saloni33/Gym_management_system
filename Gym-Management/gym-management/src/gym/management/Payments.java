@@ -58,7 +58,6 @@ public class Payments extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         PaymentsTable = new javax.swing.JTable();
         AddBtn = new javax.swing.JButton();
-        EditBtn = new javax.swing.JButton();
         DeleteBtn = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
         AmountTb = new javax.swing.JTextField();
@@ -232,20 +231,6 @@ public class Payments extends javax.swing.JFrame {
             }
         });
 
-        EditBtn.setFont(new java.awt.Font("Comic Sans MS", 0, 21)); // NOI18N
-        EditBtn.setForeground(new java.awt.Color(102, 102, 255));
-        EditBtn.setText("Edit");
-        EditBtn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                EditBtnMouseClicked(evt);
-            }
-        });
-        EditBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EditBtnActionPerformed(evt);
-            }
-        });
-
         DeleteBtn.setFont(new java.awt.Font("Comic Sans MS", 0, 21)); // NOI18N
         DeleteBtn.setForeground(new java.awt.Color(102, 102, 255));
         DeleteBtn.setText("Delete");
@@ -282,11 +267,9 @@ public class Payments extends javax.swing.JFrame {
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 2, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(174, 174, 174)
+                        .addGap(211, 211, 211)
                         .addComponent(AddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27)
-                        .addComponent(EditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(40, 40, 40)
+                        .addGap(100, 100, 100)
                         .addComponent(DeleteBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -343,11 +326,9 @@ public class Payments extends javax.swing.JFrame {
                             .addComponent(AmountTb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addComponent(jLabel11)))
                 .addGap(54, 54, 54)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DeleteBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(AddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(EditBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(AddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addComponent(jLabel17)
                 .addGap(18, 18, 18)
@@ -397,32 +378,6 @@ public class Payments extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_DeleteBtnMouseClicked
-
-    private void EditBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EditBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_EditBtnActionPerformed
-
-    private void EditBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EditBtnMouseClicked
-        if(Key == 0){
-            JOptionPane.showMessageDialog(this, "Select the Payment to Edit");
-        }else{
-            try {
-                Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/gymdb","root","");
-                String Query = "Update FinanceTbl set MonthTb=?,MemberCb=?,AmountTb=? where PId=?";
-                PreparedStatement Edit = Con.prepareStatement(Query);
-                Edit.setString(1, MonthTb.getText());
-                Edit.setString(2, MemberCb.getSelectedItem().toString());
-                Edit.setInt(3, Integer.valueOf(AmountTb.getText()));
-                Edit.setInt(4, Key);
-                int row = Edit.executeUpdate();
-                JOptionPane.showMessageDialog(this, "Payment Updated");
-                Con.close();
-                DisplayPayments();
-            }  catch (Exception e) {
-                JOptionPane.showMessageDialog(this, e);
-            }
-        }
-    }//GEN-LAST:event_EditBtnMouseClicked
 
     private void AddBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddBtnActionPerformed
         // TODO add your handling code here:
@@ -584,7 +539,6 @@ public class Payments extends javax.swing.JFrame {
     private javax.swing.JButton AddBtn;
     private javax.swing.JTextField AmountTb;
     private javax.swing.JButton DeleteBtn;
-    private javax.swing.JButton EditBtn;
     private javax.swing.JComboBox<String> MemberCb;
     private javax.swing.JTextField MonthTb;
     private javax.swing.JTable PaymentsTable;
