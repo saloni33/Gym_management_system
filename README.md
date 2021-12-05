@@ -21,6 +21,11 @@ Gym Management system is a java based Android application which basically helps 
 - [CRC Diagram](https://github.com/saloni33/Gym_management_system/blob/main/images/CRC_diagram.png)
 
 
+## Screenshots  
+Login Page  
+  <img src="https://github.com/saloni33/Gym_management_system/blob/main/images/login_page.jpeg" width=500 height=400>
+
+
 ## Contributors
 - [Saloni Doshi](https://github.com/saloni33)
 - [Anjali Sahu](https://github.com/99anjali)
